@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>javascripet</title>
 </head>
 <body>
+<h1 onclick="">Exploring Events</h1>
+<button onmousemove ="handleClick()">Click Me</button>
+
+<button>Click me-1</button>
+<button id="second">Click me-2</button>
+<button>Click me-3</button>
+<button id="lastPerson">Click me-4</button>
+
+<script>
+
+    // function handleClick() {
+    //     console.log('someone Click me')
+    // }
+        function handleClick(){
+            document.body.style.backgroundColor = 'aqua';
+        }
+    var secondButton = document.getElementById('second');
+    secondButton.addEventListener('click', handleClick)
+    secondButton.onclick = handleClick;
+
+    const lastButton = document.getElementById('lastPerson').addEventListener('click', function(){
+        document.body.style.backgroundColor = 'tomato';
+    });
+</script>
+
 
 
  <!-- <script src="javascripet.js"></script>    -->
@@ -17,6 +42,20 @@
  <!-- <script src="constLet.js"></script>    -->
  <!-- <script src="leapYear.js"></script>    -->
  <!-- <script src="factorial.js"></script>    -->
- <script src="factorial-whileloop.js"></script>   
+ <!-- <script src="factorial-whileloop.js"></script>    -->
+ <!-- <script src="factorial-Recursive.js"></script>    -->
+ <!-- <script src="fibonacci.js"></script>    -->
+ <!-- <script src="swap.js"></script>    -->
+ <!-- <script src="random.js"></script>    -->
+ <!-- <script src="max.js"></script>    -->
+ <!-- <script src="arrayMax.js"></script>    -->
+ <!-- <script src="arraySum.js"></script>    -->
+ <!-- <script src="recursion.js"></script>    -->
+ <!-- <script src="bonus.js"></script>    -->
+ <!-- <script src="assignment.js"></script>            -->
+ <!-- <script src="Function-AddEventListner/returnFunction.js"></script>            -->
+ <script src="event.js"></script>           
+  
+
 </body>
 </html>

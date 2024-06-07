@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+  
+
+
+    <script>
+        const students = [
+            {id: 21, name:"manna"},
+            {id: 31, name:"Omor suny"},
+            {id: 72, name:"dipjol"},
+            {id: 42, name:"Moyouri"}
+        ];
+
+        const names = students.map( s => s.name);
+        const ids = students.map( s => s.id);
+        console.log(names);
+        console.log(ids);
+
+        const bigger = students.filter( s => s.id>40);
+        const biggerone = students.find( s => s.id>40) 
+        console.log(bigger);
+        console.log(biggerone);
+        
+    </script>
+</body>
+</html>
